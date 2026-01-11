@@ -1,249 +1,341 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Happy 1 Year, Harshita 💛</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy 1 Year, Harshita 💛</title>
+  <meta name="description" content="A small website for our 1 year anniversary." />
 
-<style>
-:root{
-  --bg:#0b0b10;
-  --text:#f6f6fb;
-  --muted:#b9b9d0;
-  --line:rgba(255,255,255,.08);
-  --shadow:0 18px 60px rgba(0,0,0,.55);
-  --radius:18px;
-  --max:980px
-}
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
-  background:
-    radial-gradient(1200px 800px at 20% 10%, rgba(239,71,111,.18), transparent 55%),
-    radial-gradient(1200px 800px at 80% 30%, rgba(255,209,102,.16), transparent 55%),
-    var(--bg);
-  color:var(--text);
-  line-height:1.6
-}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 64px}
+  <style>
+    :root{
+      --bg:#0b0b10;
+      --text:#f6f6fb;
+      --muted:#b9b9d0;
+      --line:rgba(255,255,255,.08);
+      --shadow:0 18px 60px rgba(0,0,0,.55);
+      --radius:18px;
+      --max:980px;
+      font-synthesis-weight:none;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:
+        radial-gradient(1200px 800px at 20% 10%, rgba(239,71,111,.18), transparent 55%),
+        radial-gradient(1200px 800px at 80% 30%, rgba(255,209,102,.16), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 64px}
 
-/* HEADER */
-header{
-  position:sticky;top:0;z-index:10;
-  backdrop-filter:blur(10px);
-  background:rgba(11,11,16,.55);
-  border-bottom:1px solid var(--line)
-}
-header .inner{
-  max-width:var(--max);
-  margin:auto;
-  padding:14px 18px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center
-}
-.brand span{color:var(--muted);font-size:13px}
-nav a{font-size:13px;color:var(--muted);margin-left:12px}
-nav a:hover{color:var(--text)}
+    header{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(10px);
+      background:rgba(11,11,16,.55);
+      border-bottom:1px solid var(--line);
+    }
+    header .inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:14px;
+    }
+    .brand{display:flex;flex-direction:column}
+    .brand b{letter-spacing:.3px}
+    .brand span{color:var(--muted);font-size:13px}
+    nav{display:flex;flex-wrap:wrap;justify-content:flex-end}
+    nav a{font-size:13px;color:var(--muted);margin-left:12px}
+    nav a:hover{color:var(--text)}
 
-/* CARDS */
-.card{
-  background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  overflow:hidden
-}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
 
-/* HERO */
-.hero{
-  margin-top:18px;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:18px
-}
-@media(max-width:860px){.hero{grid-template-columns:1fr}}
-.hero-text{padding:24px}
-.pill{
-  display:inline-block;
-  margin-bottom:8px;
-  padding:8px 12px;
-  border-radius:999px;
-  font-size:13px;
-  border:1px solid var(--line);
-  color:var(--muted)
-}
-h1{font-size:44px;margin:14px 0 10px}
-.sub{color:var(--muted)}
-.cta-row{margin-top:18px}
-.btn{
-  display:inline-block;
-  padding:10px 14px;
-  border-radius:12px;
-  border:1px solid var(--line);
-  margin-right:8px
-}
-.btn.primary{
-  background:linear-gradient(90deg, rgba(255,209,102,.28), rgba(239,71,111,.22))
-}
+    .hero{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media(max-width:860px){.hero{grid-template-columns:1fr}}
+    .hero-text{padding:24px}
+    .pill{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:13px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+      flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+    h1{font-size:44px;margin:14px 0 10px;line-height:1.1}
+    @media (max-width:520px){h1{font-size:36px}}
+    .sub{color:var(--muted);max-width:54ch}
+    .cta-row{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      transition:transform .15s ease;
+      font-size:14px;
+    }
+    .btn.primary{
+      background:linear-gradient(90deg, rgba(255,209,102,.28), rgba(239,71,111,.22));
+      border-color:rgba(255,209,102,.35);
+    }
+    .btn:hover{transform:translateY(-1px)}
 
-/* SECTIONS */
-section{margin-top:22px}
-.section-title{padding:18px;border-bottom:1px solid var(--line)}
-.content{padding:18px}
+    .hero-photo{position:relative;min-height:320px;display:flex}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05) contrast(1.02)}
+    .corner{
+      position:absolute;right:14px;bottom:14px;
+      padding:10px 12px;border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(11,11,16,.55);
+      backdrop-filter:blur(10px);
+      font-size:13px;color:var(--muted);
+    }
 
-/* GALLERY */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px
-}
-.gallery img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-  border-radius:14px;
-  border:1px solid var(--line)
-}
-@media(max-width:860px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    section{margin-top:22px}
+    .section-title{padding:18px 20px;border-bottom:1px solid var(--line)}
+    .section-title h2{margin:0;font-size:18px}
+    .section-title p{margin:6px 0 0;color:var(--muted);font-size:13px}
+    .content{padding:18px 20px}
 
-/* MODAL */
-#anniversaryModal{
-  position:fixed;
-  inset:0;
-  background:
-    radial-gradient(circle at top,
-      rgba(255,209,102,.35),
-      rgba(239,71,111,.25),
-      rgba(11,11,16,.95));
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  z-index:999
-}
-.modal-card{
-  padding:42px 30px;
-  border-radius:26px;
-  background:rgba(11,11,16,.75);
-  backdrop-filter:blur(18px);
-  border:1px solid rgba(255,255,255,.15);
-  text-align:center
-}
-.modal-card h1{font-size:42px;margin:0}
-.modal-sub{margin-top:10px;color:var(--muted)}
-.modal-hint{margin-top:18px;font-size:13px;color:var(--muted)}
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:10px;
+      padding:18px;
+    }
+    @media(max-width:860px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    .gallery img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:14px;
+      border:1px solid var(--line);
+      display:block;
+      background:rgba(255,255,255,.02);
+    }
 
-@keyframes floatUp{
-  to{transform:translateY(-90px);opacity:0}
-}
-</style>
+    footer{margin-top:34px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* ANNIVERSARY MODAL */
+    #anniversaryModal{
+      position:fixed;
+      inset:0;
+      background:
+        radial-gradient(circle at top,
+          rgba(255,209,102,.35),
+          rgba(239,71,111,.25),
+          rgba(11,11,16,.95));
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      z-index:999;
+    }
+    .modal-card{
+      padding:42px 30px;
+      border-radius:26px;
+      background:rgba(11,11,16,.75);
+      backdrop-filter:blur(18px);
+      border:1px solid rgba(255,255,255,.15);
+      text-align:center;
+      max-width:min(520px, 90vw);
+    }
+    .modal-card h1{font-size:42px;margin:0;line-height:1.1}
+    .modal-sub{margin-top:10px;color:var(--muted)}
+    .modal-hint{margin-top:18px;font-size:13px;color:var(--muted)}
+
+    @keyframes floatUp{
+      to{transform:translateY(-90px);opacity:0}
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ANNIVERSARY MODAL -->
-<div id="anniversaryModal">
-  <div class="modal-card">
-    <h1 id="typeText"></h1>
-    <p class="modal-sub">12 Jan 2025 → 12 Jan 2026</p>
-    <div class="modal-hint">tap anywhere 💛</div>
-  </div>
-</div>
-
-<header>
-  <div class="inner">
-    <div class="brand">
-      <b>Happy 1 Year, Harshita</b><br/>
-      <span>Forever us 💛</span>
-    </div>
-    <nav>
-      <a href="#letter">Letter</a>
-      <a href="#photos">Photos</a>
-    </nav>
-  </div>
-</header>
-
-<div class="wrap">
-
-<div class="hero">
-  <div class="card hero-text">
-    <div class="pill">💛 One year of love</div>
-    <h1 id="heroGreeting"></h1>
-    <p class="sub">One year down. A lifetime to go.</p>
-    <div class="cta-row">
-      <a class="btn primary" href="#letter">Read my letter</a>
-      <a class="btn" href="#photos">View photos</a>
+  <!-- ANNIVERSARY MODAL -->
+  <div id="anniversaryModal" role="dialog" aria-modal="true" aria-label="Anniversary message">
+    <div class="modal-card">
+      <h1 id="typeText"></h1>
+      <p class="modal-sub">12 Jan 2025 → 12 Jan 2026</p>
+      <div class="modal-hint">tap anywhere 💛</div>
     </div>
   </div>
-  <div class="card">
-    <img src="hero.jpg.jpeg" style="width:100%;height:100%;object-fit:cover">
+
+  <header>
+    <div class="inner">
+      <div class="brand">
+        <b>Happy 1 Year, Harshita</b>
+        <span>12 Jan 2025 → 12 Jan 2026</span>
+      </div>
+      <nav>
+        <a href="#letter">Letter</a>
+        <a href="#photos">Photos</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="card hero-text">
+        <div class="pill">💛 Happy 1 Year Anniversary</div>
+        <div class="pill">🎉 I love you, Harshita</div>
+
+        <h1 id="heroGreeting">Happy Anniversary,<br/>my love 💛</h1>
+        <p class="sub">One year down. A lifetime to go.</p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#letter">Read my letter</a>
+          <a class="btn" href="#photos">View photos</a>
+        </div>
+      </div>
+
+      <div class="card hero-photo">
+        <!-- IMPORTANT: images are expected in the SAME folder as this HTML file -->
+        <img data-base="hero" alt="Us" loading="eager" />
+        <div class="corner">
+          Started: <b>12 Jan 2025</b><br/>
+          Anniversary: <b>12 Jan 2026</b><br/>
+          Seeing you: <b>17 Jan 2026</b>
+        </div>
+      </div>
+    </div>
+
+    <section id="letter" class="card">
+      <div class="section-title">
+        <h2>A letter</h2>
+        <p>Specific, honest, and for you.</p>
+      </div>
+      <div class="content">
+        <p>Dear Harshita,</p>
+        <p>
+          Happy 1 year, Bebu. 12th January 2025 will always mean something to me, because it marks the day “us” became official—
+          but if I’m honest, my heart started choosing you from the day we met.
+        </p>
+        <p>
+          I love you. I’m sorry when I fall short. And I’m yours—always.
+        </p>
+        <p>Love,<br/>Abhi</p>
+      </div>
+    </section>
+
+    <section id="photos" class="card">
+      <div class="section-title">
+        <h2>Photos</h2>
+        <p>15 memories 💛</p>
+      </div>
+
+      <div class="gallery">
+        <img data-base="1"  alt="Memory 1"  loading="lazy">
+        <img data-base="2"  alt="Memory 2"  loading="lazy">
+        <img data-base="3"  alt="Memory 3"  loading="lazy">
+        <img data-base="4"  alt="Memory 4"  loading="lazy">
+        <img data-base="5"  alt="Memory 5"  loading="lazy">
+        <img data-base="6"  alt="Memory 6"  loading="lazy">
+        <img data-base="7"  alt="Memory 7"  loading="lazy">
+        <img data-base="8"  alt="Memory 8"  loading="lazy">
+        <img data-base="9"  alt="Memory 9"  loading="lazy">
+        <img data-base="10" alt="Memory 10" loading="lazy">
+        <img data-base="11" alt="Memory 11" loading="lazy">
+        <img data-base="12" alt="Memory 12" loading="lazy">
+        <img data-base="13" alt="Memory 13" loading="lazy">
+        <img data-base="14" alt="Memory 14" loading="lazy">
+        <img data-base="15" alt="Memory 15" loading="lazy">
+      </div>
+    </section>
+
+    <footer>
+      Made with love • © Abhi • <span id="year"></span>
+    </footer>
+
   </div>
-</div>
 
-<section id="letter" class="card">
-  <div class="section-title"><h2>A letter</h2></div>
-  <div class="content">
-    <p>Dear Harshita,</p>
-    <p>Happy 1 year, Bebu. I choose you—on easy days and hard ones. Always.</p>
-    <p>I love you. I’m sorry when I fall short. And I’m yours.</p>
-    <p>Love,<br/>Abhi</p>
-  </div>
-</section>
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-<section id="photos" class="card">
-  <div class="section-title"><h2>Memories</h2></div>
-  <div class="content gallery">
-    <img src="1.jpg.jpeg">
-    <img src="2.jpg.jpeg">
-    <img src="3.jpg.jpeg">
-    <img src="4.jpg.jpeg">
-    <img src="5.jpg.jpeg">
-    <img src="6.jpg.jpeg">
-  </div>
-</section>
+    /* ---------- IMAGE FIX (GitHub Pages safe) ----------
+      You said images are NOT in a folder, so this assumes:
+      index.html and images are in the SAME directory.
 
-</div>
+      It also tries multiple extensions automatically:
+      hero.jpg / hero.jpeg / hero.png / hero.webp / hero.jpg.jpeg
+      and similarly for 1..15.
+    */
+    const IMAGE_PREFIX = "./"; // keep "./" if images are next to index.html
+    const EXT_TRIES = ["jpg.jpeg", "jpeg", "jpg", "png", "webp"];
 
-<script>
-/* TYPEWRITER */
-const text="Happy 1 Year Anniversary, Babe 💛";
-let i=0;
-const el=document.getElementById("typeText");
-(function type(){
-  if(i<text.length){
-    el.textContent+=text[i++];
-    setTimeout(type,70);
-  }
-})();
+    function loadWithFallback(img, baseName) {
+      let idx = 0;
+      function tryNext() {
+        if (idx >= EXT_TRIES.length) {
+          // hide broken boxes if none match
+          img.style.display = "none";
+          return;
+        }
+        img.src = `${IMAGE_PREFIX}${baseName}.${EXT_TRIES[idx++]}`;
+      }
+      img.onerror = tryNext;
+      tryNext();
+    }
 
-/* CLOSE MODAL */
-const modal=document.getElementById("anniversaryModal");
-modal.onclick=()=>modal.remove();
-setTimeout(()=>modal.remove(),6500);
+    document.querySelectorAll("img[data-base]").forEach(img => {
+      loadWithFallback(img, img.dataset.base);
+    });
 
-/* HERO GREETING */
-const today=new Date().toDateString();
-const anniv=new Date("2026-01-12").toDateString();
-document.getElementById("heroGreeting").innerHTML=
-  today===anniv
-  ?"Happy Anniversary,<br/>my love 💛"
-  :"To Harshita,<br/>my favourite person.";
+    /* TYPEWRITER MODAL */
+    const text = "Happy 1 Year Anniversary, Babe 💛";
+    let i = 0;
+    const el = document.getElementById("typeText");
+    (function type(){
+      if (i < text.length) {
+        el.textContent += text[i++];
+        setTimeout(type, 70);
+      }
+    })();
 
-/* FLOATING HEARTS */
-document.addEventListener("click",e=>{
-  const h=document.createElement("div");
-  h.textContent="💛";
-  h.style.position="fixed";
-  h.style.left=e.clientX+"px";
-  h.style.top=e.clientY+"px";
-  h.style.animation="floatUp 2s ease forwards";
-  document.body.appendChild(h);
-  setTimeout(()=>h.remove(),2000);
-});
-</script>
+    /* CLOSE MODAL */
+    const modal = document.getElementById("anniversaryModal");
+    modal.onclick = () => modal.remove();
+    setTimeout(() => modal.remove(), 6500);
+
+    /* FLOATING HEARTS */
+    document.addEventListener("click", e => {
+      const h = document.createElement("div");
+      h.textContent = "💛";
+      h.style.position = "fixed";
+      h.style.left = e.clientX + "px";
+      h.style.top = e.clientY + "px";
+      h.style.animation = "floatUp 2s ease forwards";
+      h.style.pointerEvents = "none";
+      document.body.appendChild(h);
+      setTimeout(() => h.remove(), 2000);
+    });
+  </script>
 
 </body>
 </html>
