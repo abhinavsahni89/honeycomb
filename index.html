@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -374,10 +373,7 @@
     const daysToAnniversary = Math.ceil((anniversary - now) / (1000*60*60*24));
     document.getElementById("daysToAnniversary").textContent =
       isNaN(daysToAnniversary) ? "Set anniversary date in code" :
-      (daysToAnniversary === 0 ? "Today" :
-       daysToAnniversary === 1 ? "Tomorrow" :
-       daysToAnniversary > 1 ? daysToAnniversary + " days to go" :
-       "Happy anniversary ❤️");
+      "Happy 1st anniversary 💛";
 
     const daysToMeet = Math.ceil((meet - now) / (1000*60*60*24));
     document.getElementById("daysToMeet").textContent =
