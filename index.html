@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,56 +7,155 @@
   <title>Happy 1 Year, Harshita 💛</title>
   <meta name="description" content="A 1 year anniversary page for Harshita." />
   <style>
-    :root{--bg:#0b0b10;--text:#f6f6fb;--muted:#b9b9d0;--line:rgba(255,255,255,.08);--shadow:0 18px 60px rgba(0,0,0,.55);--radius:18px;--max:980px}
+    :root{
+      --bg:#0b0b10; --text:#f6f6fb; --muted:#b9b9d0; --line:rgba(255,255,255,.08);
+      --shadow: 0 18px 60px rgba(0,0,0,.55);
+      --radius: 18px; --max: 980px;
+    }
     *{box-sizing:border-box}
-    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:radial-gradient(1200px 800px at 20% 10%, rgba(239,71,111,.18), transparent 55%),radial-gradient(1200px 800px at 80% 30%, rgba(255,209,102,.16), transparent 55%),var(--bg);color:var(--text);line-height:1.6}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:
+        radial-gradient(1200px 800px at 20% 10%, rgba(239,71,111,.18), transparent 55%),
+        radial-gradient(1200px 800px at 80% 30%, rgba(255,209,102,.16), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
     a{color:inherit}
-    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 64px}
-    header{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:rgba(11,11,16,.55);border-bottom:1px solid var(--line)}
-    header .inner{max-width:var(--max);margin:0 auto;width:100%;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px}
-    .brand{display:flex;flex-direction:column}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 64px}
+
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,11,16,.55);
+      border-bottom:1px solid var(--line);
+    }
+    header .inner{
+      max-width:var(--max); margin:0 auto; width:100%;
+      padding:14px 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+    }
+    .brand{display:flex; flex-direction:column}
     .brand b{letter-spacing:.3px}
-    .brand span{color:var(--muted);font-size:13px}
-    nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
-    nav a{font-size:13px;text-decoration:none;color:var(--muted)}
+    .brand span{color:var(--muted); font-size:13px}
+    nav{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+    nav a{font-size:13px; text-decoration:none; color:var(--muted)}
     nav a:hover{color:var(--text)}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
-    .hero{margin-top:18px;display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch}
-    @media (max-width:860px){.hero{grid-template-columns:1fr}}
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width:860px){ .hero{grid-template-columns:1fr} }
+
     .hero-text{padding:24px}
-    .pill{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:13px;background:rgba(255,255,255,.03)}
-    h1{margin:14px 0 8px;font-size:44px;line-height:1.1}
-    @media (max-width:520px){h1{font-size:36px}}
-    .sub{color:var(--muted);max-width:58ch}
-    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px;border:1px solid var(--line);text-decoration:none;font-size:14px;background:rgba(255,255,255,.04)}
-    .btn.primary{background:linear-gradient(90deg, rgba(255,209,102,.28), rgba(239,71,111,.22));border-color:rgba(255,209,102,.35)}
-    .btn:hover{transform:translateY(-1px)}
-    .hero-photo{position:relative;min-height:320px;display:flex}
-    .hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
-    .corner{position:absolute;right:14px;bottom:14px;padding:10px 12px;border-radius:14px;border:1px solid var(--line);background:rgba(11,11,16,.55);backdrop-filter:blur(10px);font-size:13px;color:var(--muted)}
+    .pill{
+      display:inline-flex; align-items:center; gap:10px; flex-wrap:wrap;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+      background: rgba(255,255,255,.03);
+    }
+
+    h1{margin:14px 0 8px; font-size:44px; line-height:1.1}
+    @media (max-width:520px){ h1{font-size:36px} }
+
+    .sub{color:var(--muted); max-width:58ch}
+    .cta-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      text-decoration:none;
+      font-size:14px;
+      background: rgba(255,255,255,.04);
+    }
+    .btn.primary{
+      background: linear-gradient(90deg, rgba(255,209,102,.28), rgba(239,71,111,.22));
+      border-color: rgba(255,209,102,.35)
+    }
+    .btn:hover{transform: translateY(-1px)}
+
+    .hero-photo{position:relative; min-height:320px; display:flex}
+    .hero-photo img{width:100%; height:100%; object-fit:cover; display:block}
+    .corner{
+      position:absolute; right:14px; bottom:14px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(11,11,16,.55);
+      backdrop-filter: blur(10px);
+      font-size:13px;
+      color:var(--muted);
+    }
+
     section{margin-top:22px}
-    .section-title{padding:18px 20px;border-bottom:1px solid var(--line)}
-    .section-title h2{margin:0;font-size:18px}
-    .section-title p{margin:6px 0 0;color:var(--muted);font-size:13px}
+    .section-title{padding:18px 20px; border-bottom:1px solid var(--line)}
+    .section-title h2{margin:0; font-size:18px}
+    .section-title p{margin:6px 0 0; color:var(--muted); font-size:13px}
     .content{padding:18px 20px}
-    .timeline{display:flex;flex-direction:column;gap:14px}
-    .moment{padding:14px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03)}
+
+    .timeline{display:flex; flex-direction:column; gap:14px}
+    .moment{
+      padding:14px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background: rgba(255,255,255,.03);
+    }
     .moment b{display:block}
-    .moment span{color:var(--muted);font-size:13px}
-    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    @media (max-width:860px){.grid2{grid-template-columns:1fr}}
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:18px}
-    @media (max-width:860px){.gallery{grid-template-columns:repeat(2,1fr)}}
-    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.02)}
-    .list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    @media (max-width:650px){.list{grid-template-columns:1fr}}
-    .chip{padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
-    footer{margin-top:34px;color:var(--muted);font-size:13px;text-align:center}
+    .moment span{color:var(--muted); font-size:13px}
+
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+    @media (max-width:860px){ .grid2{grid-template-columns:1fr} }
+
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+      padding:18px;
+    }
+    @media (max-width:860px){ .gallery{grid-template-columns: repeat(2, 1fr);} }
+    .gallery img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.02);
+    }
+
+    .list{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    @media (max-width:650px){ .list{grid-template-columns:1fr} }
+    .chip{
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+
+    footer{margin-top:34px; color:var(--muted); font-size:13px; text-align:center}
+
     #secret{display:none}
     :target#secret{display:block}
   </style>
 </head>
+
 <body>
   <header>
     <div class="inner">
@@ -112,22 +212,38 @@
           <div class="moment">
             <b>🌟 How we started</b>
             <span>16 Aug 2024 • IDF, Brisbane</span>
-            <div>We met at IDF in Brisbane and something about you felt familiar from the very beginning. Since that day, I’ve been falling more and more in love with you—quietly, confidently, and completely.</div>
+            <div>
+              We met at IDF in Brisbane and something about you felt familiar from the very beginning.
+              Since that day, I’ve been falling more and more in love with you—quietly, confidently, and completely.
+            </div>
           </div>
+
           <div class="moment">
             <b>🍜 Our first proper “us” moment</b>
             <span>Aug 2024</span>
-            <div>From the first real conversations to the first laughs that felt effortless, you made everything feel easy. I still replay those little moments because that’s when I knew this wasn’t just a spark—this was something real.</div>
+            <div>
+              From the first real conversations to the first laughs that felt effortless, you made everything feel easy.
+              I still replay those little moments because that’s when I knew this wasn’t just a spark—this was something real.
+            </div>
           </div>
+
           <div class="moment">
             <b>🌧️ Even when it’s hard</b>
             <span>Right now</span>
-            <div>Bebu… I know you’re mad at me right now, and I’m sorry. I’m genuinely sorry for whatever I did that hurt you or made you feel unheard. I don’t want to win an argument—I want to protect what we have. I choose you, even on the tough days.</div>
+            <div>
+              Bebu… I know you’re mad at me right now, and I’m sorry. I’m genuinely sorry for whatever I did that hurt you
+              or made you feel unheard. I don’t want to win an argument—I want to protect what we have.
+              I choose you, even on the tough days.
+            </div>
           </div>
+
           <div class="moment">
             <b>🌈 What you are to me</b>
             <span>Always</span>
-            <div>You’re not just my girlfriend. You’re my best friend. And lately, with you in India, I’ve been missing you so much. The distance is loud, but my feelings are louder—and they’re steady.</div>
+            <div>
+              You’re not just my girlfriend. You’re my best friend. And lately, with you in India, I’ve been missing you so much.
+              The distance is loud, but my feelings are louder—and they’re steady.
+            </div>
           </div>
         </div>
       </div>
@@ -138,6 +254,7 @@
         <h2>Photos</h2>
         <p>15 memories ❤️</p>
       </div>
+
       <div class="gallery">
         <img src="1.jpg.jpeg"  alt="Memory 1">
         <img src="2.jpg.jpeg"  alt="Memory 2">
@@ -165,12 +282,40 @@
         </div>
         <div class="content">
           <p>Dear Harshita,</p>
-          <p>Happy 1 year, Bebu. 12th January 2025 will always mean something to me, because it marks the day “us” became official—but if I’m honest, my heart started choosing you from the day we met at IDF in Brisbane on 16th August 2024.</p>
-          <p>I know you’re mad at me right now, and I’m sorry. I’m really sorry, Bebu. I hate that anything I did made you feel upset or alone in it. I don’t want to be the reason you feel heavy. I want to be the person who brings you peace. If I’ve missed something, I’m listening—and I’ll do better, not just say it.</p>
-          <p>You’re not only my girlfriend—you’re my best friend. And with you in India right now, I feel that absence in everything. I miss your voice, your presence, your little reactions, and the comfort of simply knowing you’re close. I miss you more than I can explain properly.</p>
-          <p>And I need you to know this: I couldn’t have asked for anything better in my life. As a partner, as my person, as someone I want to build a future with—you’re it. The way you look after my family like they’re your own… that means the world to me. It’s rare, it’s beautiful, and it makes me feel incredibly lucky.</p>
-          <p>I’m counting down the days because I’m seeing you on the 17th, and I can’t wait. I’m holding onto that like a promise—because coming back to you is my favourite thing.</p>
-          <p>I love you, Harshita. I love you, Bebu.<br/>I’m sorry. And I’m yours.</p>
+
+          <p>
+            Happy 1 year, Bebu. 12th January 2025 will always mean something to me, because it marks the day “us” became official—
+            but if I’m honest, my heart started choosing you from the day we met at IDF in Brisbane on 16th August 2024.
+          </p>
+
+          <p>
+            I know you’re mad at me right now, and I’m sorry. I’m really sorry, Bebu. I hate that anything I did made you feel upset
+            or alone in it. I don’t want to be the reason you feel heavy. I want to be the person who brings you peace.
+            If I’ve missed something, I’m listening—and I’ll do better, not just say it.
+          </p>
+
+          <p>
+            You’re not only my girlfriend—you’re my best friend. And with you in India right now, I feel that absence in everything.
+            I miss your voice, your presence, your little reactions, and the comfort of simply knowing you’re close.
+            I miss you more than I can explain properly.
+          </p>
+
+          <p>
+            And I need you to know this: I couldn’t have asked for anything better in my life. As a partner, as my person,
+            as someone I want to build a future with—you’re it. The way you look after my family like they’re your own…
+            that means the world to me. It’s rare, it’s beautiful, and it makes me feel incredibly lucky.
+          </p>
+
+          <p>
+            I’m counting down the days because I’m seeing you on the 17th, and I can’t wait. I’m holding onto that like a promise—
+            because coming back to you is my favourite thing.
+          </p>
+
+          <p>
+            I love you, Harshita. I love you, Bebu.<br/>
+            I’m sorry. And I’m yours.
+          </p>
+
           <p>Love,<br/>Abhi</p>
         </div>
       </div>
@@ -199,8 +344,13 @@
         <p>Only shows when someone clicks “Hidden message”.</p>
       </div>
       <div class="content">
-        <p>Harshita — if you found this, here’s the truth: <b>I’m still falling for you.</b></p>
-        <p>Redeem this for: <b>a date night</b> (your choice) + <b>one big hug on the 17th</b>.</p>
+        <p>
+          Harshita — if you found this, here’s the truth:
+          <b>I’m still falling for you.</b>
+        </p>
+        <p>
+          Redeem this for: <b>a date night</b> (your choice) + <b>one big hug on the 17th</b>.
+        </p>
       </div>
     </section>
 
@@ -231,8 +381,8 @@
 
     const daysToMeet = Math.ceil((meet - now) / (1000*60*60*24));
     document.getElementById("daysToMeet").textContent =
-      isNaN(daysToMeet) ? "Set meet date in code" :
-      (daysToMeet >= 0 ? daysToMeet + " days until I see you" : "I’m already with you ❤️");
+      (isNaN(daysToMeet) ? "Set meet date in code" :
+        (daysToMeet >= 0 ? daysToMeet + " days until I see you" : "I’m already with you ❤️"));
   </script>
 </body>
 </html>
